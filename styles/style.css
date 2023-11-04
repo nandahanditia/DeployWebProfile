@@ -1,0 +1,149 @@
+html, body {
+    width: 100%; /* Lebar 100% dari lebar layar */
+    height: 100%; /* Tinggi 100% dari tinggi layar */
+    margin: 0; /* Menghapus margin bawaan */
+    padding: 0; /* Menghapus padding bawaan */
+    overflow-y: scroll; /* Memungkinkan scroll vertikal */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+
+
+/* Reset CSS untuk menghilangkan margin dan padding default */
+
+
+body, h1, h2, p {
+    margin: 2;
+    padding: 2;
+    
+}
+
+/* Gaya untuk elemen Header */
+header {
+    background-color: #e5d997;
+    color: #100901;
+    text-align: center;
+    padding:  1px;
+}
+
+/* Gaya untuk navigasi di dalam Header */
+/* Gaya dasar tautan navigasi */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #ff5733;
+    background-color: #ff5733;
+    transform: scale(1.1);
+}
+
+/* Ikon di tautan navigasi */
+nav a::before {
+    content: "\1F3E0"; /* Unicode untuk ikon rumah */
+    margin-right: 5px;
+}
+
+/* Tooltip saat tautan dihover */
+nav a::after {
+    content: "Click that you wanna know!";
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+nav a:hover::after {
+    display: block;
+}
+
+
+/* Gaya untuk elemen Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.kotak-kecil {
+    width: 1400px; /* Lebar kotak kecil */
+    height: 280px; /* Tinggi kotak kecil */
+    background-color: #e8ed8b; /* Warna latar belakang kotak kecil */
+    padding: 20px; /* Menambahkan padding untuk membuat kotak kecil */
+    border: 2px solid #ccc; /* Menambahkan border untuk membatasi kotak kecil */
+    border-radius: 8px; /* Membuat sudut kotak kecil menjadi bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada kotak kecil */
+    text-align: align; /* Mengatur teks menjadi rata tengah */
+}
+
+.kotak-kecil1 {
+    width: 300px; /* Lebar kotak kecil */
+    height: 50px; /* Tinggi kotak kecil */
+    background-color: #e8ed8b; /* Warna latar belakang kotak kecil */
+    padding: 20px; /* Menambahkan padding untuk membuat kotak kecil */
+    border: 2px solid #ccc; /* Menambahkan border untuk membatasi kotak kecil */
+    border-radius: 8px; /* Membuat sudut kotak kecil menjadi bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada kotak kecil */
+    text-align: align; /* Mengatur teks menjadi rata tengah */
+}
+
+.kotak-kecil2 {
+    width: 500px; /* Lebar kotak kecil */
+    height: 200px; /* Tinggi kotak kecil */
+    background-color: #f0d957; /* Warna latar belakang kotak kecil */
+    padding: 20px; /* Menambahkan padding untuk membuat kotak kecil */
+    border: 2px solid #ccc; /* Menambahkan border untuk membatasi kotak kecil */
+    border-radius: 8px; /* Membuat sudut kotak kecil menjadi bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada kotak kecil */
+    text-align: align; /* Mengatur teks menjadi rata tengah */
+}
+
+/* Gaya untuk elemen Artikel */
+article {
+    flex: 2;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk elemen Aside */
+aside {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk gambar di dalam Aside */
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Gaya untuk elemen Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
